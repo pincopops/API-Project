@@ -1,0 +1,21 @@
+// scss general paths to import
+@import "./Colors";
+@import "./Font";
+
+// scss components' paths to import
+@import "../components_scss/Header";
+
+// scss typography to import
+@import "./Typography";
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $primary;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
