@@ -19,11 +19,16 @@
             &-h1{
                 margin: auto;
                 padding-top: 1rem;
+                text-align: center;
             }
 
             &-subtitle{
                 display: flex;
                 justify-content:center;
+
+                &-h2{
+                    text-align: center;
+                }
 
                 &-input{
                     border-radius: 1rem;
