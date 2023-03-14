@@ -5,9 +5,9 @@ function Card() {
     return (
         <>
             <div className="card-book-container">
-                <div className="a" style={{ backgroundImage: `url(${bookshelfImg})`}}>
-                    <div className="b">info</div>
-                    <h3 className="c">titolo libro</h3>
+                <div className="card-book-container-bg" style={{ backgroundImage: `url(${bookshelfImg})`}}>
+                    <div className="card-book-container-bg-info">info</div>
+                    <h3 className="card-book-container-bg-title">titolo libro</h3>
 
                 </div>
             </div>
