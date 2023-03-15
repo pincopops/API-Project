@@ -1,34 +1,52 @@
-.cardDisplay-container{
+.cardDisplay-container-overlay {
     width: 50vw;
     margin: 0 auto;
     margin-top: 11.9rem;
-    border: 2px solid red;
+    background: linear-gradient (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
 
-    &-top{
-        width: auto;
-        border: 2px solid green;
-        display: flex;
-        
+    &-inner {
+        border: 0.3rem solid $primary ;
+        background-color: $secondary;
 
-        &-img{
-            width: 17.4rem;
-            height: 22.5rem;
+        &-top {
+            width: auto;
+            border: 2px solid green;
+            display: flex;
+
+
+            &-img {
+                width: 17.4rem;
+                height: 22.5rem;
+            }
+
+            &-infos {
+                margin-left: 3rem;
+
+                &-more {
+                    background-color: red;
+                }
+            }
         }
 
-        &-infos{
-            margin-left: 3rem;
+        &-bottom {
+            border: 3px solid yellow;
         }
-    }
 
-    &-bottom{
-        border: 3px solid yellow;
-        width: auto;
-        word-wrap: break-word;
-    }
+        &-bottom-close {
+            border: 3px solid darkgoldenrod;
+            font-size: 1.4rem;
+            text-align: center;
+            width: 5rem;
+            height: 1.9rem;
+            border-radius: 0.7rem;
+            cursor: pointer;
+            background-color: $light-grey;
+            margin: 1rem auto;
+        }
 
-    &-bottom-close{
-        border: 3px solid darkgoldenrod;
-        text-align: center;
-        height: 2rem;
+        &-bottom-close:hover {
+            background-color: $secondary;
+            color: white;
+        }
     }
 }

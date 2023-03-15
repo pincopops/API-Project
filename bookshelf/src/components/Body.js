@@ -15,7 +15,7 @@ function Header() {
     const [search, setSearch] = useState("");
     const [bookData, setBookData] = useState([]);
     
-    //function to search books
+    //function to search books over Api
     const searchBook = (event) => {
         if(event.key === "Enter"){
             axios.get("https://www.googleapis.com/books/v1/volumes?q=" + search + "&key=AIzaSyBg8jAMXdAmHkaHViRFX3UbTcWC4r8FEx0")
@@ -26,6 +26,7 @@ function Header() {
 
     return (
         <>
+        {/* header section of the page: might be component? */}
             <div className="body-header-container">
                 <div className="body-header-container-bookshelfImg" style={{ backgroundImage: `url(${bookshelfImg})` }}>
                     <div className="body-header-container-bookshelfImg-title">
