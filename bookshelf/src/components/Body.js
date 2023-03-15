@@ -2,22 +2,24 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import Card from "./Card";
+import CardDisplay from "./CardDisplay";
 
 //importing assets
 import bookshelfImg from "../assets/jpgs/bookshelf-background.jpg";
 import searchImg from "../assets/svgs/search-icon-1.svg";
 
-function Header(props) {
+
+function Header() {
 
     //state managing through hook
     const [search, setSearch] = useState("");
-    // const [bookData, setBookData] = useState([]);
+    const [bookData, setBookData] = useState([]);
     
     //function to search books
     const searchBook = (event) => {
         if(event.key === "Enter"){
             axios.get("https://www.googleapis.com/books/v1/volumes?q=" + search + "&key=AIzaSyBg8jAMXdAmHkaHViRFX3UbTcWC4r8FEx0")
-            .then(res => console.log(res.data.items))
+            .then(res => setBookData(res.data.items))
             .catch(err => console.log(err))
         }
     } 
@@ -36,13 +38,11 @@ function Header(props) {
                 </div>
             </div>
             <div className="body-card-container">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-
-
+                <Card book={bookData}/>
             </div>
+            <CardDisplay />
+
+
         </>
     )
 }

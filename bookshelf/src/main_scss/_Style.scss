@@ -3,16 +3,16 @@
 @import "./Font";
 
 // scss components' paths to import
-@import "../components_scss/Card";
 @import "../components_scss/Body";
-
+@import "../components_scss/Card";
+@import "../components_scss/CardDisplay";
 // scss typography to import
 @import "./Typography";
 
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color: $primary;
+    background-color: $secondary-alt;
     font-family: 'Roboto', sans-serif;
     font-family: 'Inter', sans-serif;
 }
