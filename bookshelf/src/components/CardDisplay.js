@@ -1,5 +1,4 @@
 import React from "react";
-import test from "../assets/jpgs/bookshelf-background.jpg";
 
 function CardDisplay({show, item, onClose}) {
     if(!show){
