@@ -22,12 +22,12 @@ function Body() {
         if (event.key === "Enter") {
             axios.get("https://www.googleapis.com/books/v1/volumes?q=" + search + "&key=AIzaSyBg8jAMXdAmHkaHViRFX3UbTcWC4r8FEx0")
                 .then(res => setBookData(res.data.items))
-                .catch(err => { alert("Something went wrong. Try again."); console.log(err); })
+                .catch(err => { alert("Something went wrong. Try search better."); console.log(err); })
         }
     }
     return (
         <>
-            <Header value={search} onChange={(event) => setSearch(event.target.value)} onKeyDown={searchBook} book={bookData}/>
+            <Header value={search} onChange={(event) => setSearch(event.target.value)} onKeyDown={searchBook}/>
             <div className="card-container">
                 <Card book={bookData} />
             </div>

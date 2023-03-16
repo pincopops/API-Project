@@ -1,23 +1,23 @@
 .cardDisplay-container-overlay {
     min-height: 100vh;
-    width: 50vw;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    margin: 0 auto;
-    margin-top: 11.9rem;
-    background: linear-gradient (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    background-color: $light-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &-inner {
+        padding: 2rem;
         border: 0.3rem solid $primary ;
         background-color: $secondary;
+        width: 50vw;
 
         &-top {
-            width: auto;
             display: flex;
-
 
             &-img {
                 width: 17.4rem;
@@ -27,21 +27,36 @@
             &-infos {
                 margin-left: 3rem;
 
-                &-more{
+                &-title{
+                    color: white;
+                }
+                
+                &-author{
+                    color: white;
+                }
+
+                &-data{
+                    color: white;
+                }
+
+                &-more {
                     text-decoration: none;
                     font-weight: bolder;
                     color: $primary;
                 }
-                &-more:hover{
+
+                &-more:hover {
                     text-decoration: underline;
                     color: $primary;
                 }
             }
         }
 
-        &-bottom{
+        &-bottom {
             padding: 2rem;
+            color: white;
         }
+
 
         &-bottom-close {
             font-size: 1.4rem;
@@ -49,6 +64,7 @@
             width: 5rem;
             height: 1.9rem;
             border-radius: 0.7rem;
+            border: 0.1rem solid white;
             cursor: pointer;
             background-color: $light-grey;
             margin: 1rem auto;
