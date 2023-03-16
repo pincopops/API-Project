@@ -12,8 +12,8 @@ function CardDisplay({ show, item, onClose }) {
         published: item.volumeInfo.publishedDate ? item.volumeInfo.publishedDate : "We're so sorry, there's no publishing date's info for this book.",
         more: item.volumeInfo.infoLink ? item.volumeInfo.infoLink : "We're so sorry, there's no link for this book.",
         description: item.volumeInfo.description ? item.volumeInfo.description : "We're so sorry, there's no description for this book.",
-
     }
+
 
     return (
         <>
