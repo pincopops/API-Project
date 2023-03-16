@@ -1,5 +1,11 @@
 .cardDisplay-container-overlay {
+    min-height: 100vh;
     width: 50vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
     margin: 0 auto;
     margin-top: 11.9rem;
     background: linear-gradient (rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
@@ -10,7 +16,6 @@
 
         &-top {
             width: auto;
-            border: 2px solid green;
             display: flex;
 
 
@@ -22,18 +27,23 @@
             &-infos {
                 margin-left: 3rem;
 
-                &-more {
-                    background-color: red;
+                &-more{
+                    text-decoration: none;
+                    font-weight: bolder;
+                    color: $primary;
+                }
+                &-more:hover{
+                    text-decoration: underline;
+                    color: $primary;
                 }
             }
         }
 
-        &-bottom {
-            border: 3px solid yellow;
+        &-bottom{
+            padding: 2rem;
         }
 
         &-bottom-close {
-            border: 3px solid darkgoldenrod;
             font-size: 1.4rem;
             text-align: center;
             width: 5rem;

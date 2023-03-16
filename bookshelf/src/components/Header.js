@@ -20,9 +20,6 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            <div className="header-card-container">
-                <Card book={props.book} />
-            </div>
         </>
     )
 }
