@@ -15,8 +15,6 @@ function CardDisplay({ show, item, onClose }) {
 
     }
 
-    let prova = JSON.stringify(cardFocus.description)
-
     return (
         <>
             <div className="cardDisplay-container-overlay">
