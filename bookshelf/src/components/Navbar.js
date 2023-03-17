@@ -7,14 +7,14 @@ function Navbar() {
             <nav>
                 <div className="navbar-container">
                     <div className="navbar-container-left">
-                        <h1>Personal Library
-                        <img src={bookImg}/>
+                        <h1 className="navbar-container-left-title">Personal Library
+                        <img className="navbar-container-left-img" src={bookImg}/>
                         </h1>
                     </div>
                     <div className="navbar-container-right">
-                        <h2><a href="#">Home</a></h2>
-                        <h2><a className="navbar-container-right-focus" href="#">Books</a></h2>
-                        <h2><a href="#">Shop</a></h2>
+                        <h2>Home</h2>
+                        <h2 id="navbar-container-right-focus">Books</h2>
+                        <h2>Shop</h2>
                     </div>
                 </div>
             </nav>
