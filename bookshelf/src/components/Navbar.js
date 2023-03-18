@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import bookImg from "../assets/svgs/book-icon-1.svg";
 
 function Navbar() {
+
+    // const [workInProgress, setWorkInProgress] = useState(false);
+    
+    const handleClickEvent = () => {
+        alert(`ACCESS DENIED: \n you don't have superlative powers to access this section ⛔️`);
+    };
+
     return (
         <>
             <nav>
@@ -12,9 +19,9 @@ function Navbar() {
                         </h1>
                     </div>
                     <div className="navbar-container-right">
-                        <h2>Home</h2>
+                        <h2 onClick={handleClickEvent}>Home</h2>
                         <h2 id="navbar-container-right-focus">Books</h2>
-                        <h2>Shop</h2>
+                        <h2 onClick={handleClickEvent}>Shop</h2>
                     </div>
                 </div>
             </nav>

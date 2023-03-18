@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import Header from "./Header";
 import Card from "./Card";
+import Navbar from "./Navbar";
 
 
 
@@ -27,6 +28,7 @@ function Body() {
     }
     return (
         <>
+            <Navbar />
             <Header value={search} onChange={(event) => setSearch(event.target.value)} onKeyDown={searchBook}/>
             <div className="card-container">
                 <Card book={bookData} />

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CardDisplay from "./CardDisplay";
 
 function Card({book}) {
-    console.log(book);
     const [show, setShow] = useState(false);
     const [bookItem, setBookItem] = useState();
 
@@ -22,7 +21,7 @@ function Card({book}) {
                                         <div className="card-book-container-info" onClick={() => { setShow(true); setBookItem(item) }}>info</div>
                                         <h3 className="card-book-container-title">{title}</h3>
                                     </div>
-                                    <CardDisplay key={item.etag} show={show} item={bookItem} onClose={() => setShow(false)} />
+                                    <CardDisplay show={show} item={bookItem} onClose={() => setShow(false)} />
 
                                 </div>
                             </>
