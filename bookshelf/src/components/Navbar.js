@@ -3,7 +3,7 @@ import bookImg from "../assets/svgs/book-icon-1.svg";
 
 function Navbar() {
 
-    // const [workInProgress, setWorkInProgress] = useState(false);
+    const navbarItems = ["Home", "Books", "Shop"];
     
     const handleClickEvent = () => {
         alert(`ACCESS DENIED: \n you don't have superlative powers to access this section ⛔️`);
