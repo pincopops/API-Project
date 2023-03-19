@@ -4,6 +4,7 @@ import axios from "axios";
 import Header from "./Header";
 import Card from "./Card";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 
@@ -33,6 +34,7 @@ function Body() {
             <div className="card-container">
                 <Card book={bookData} />
             </div>
+            <Footer />
         </>
     )
 }

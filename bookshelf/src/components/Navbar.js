@@ -14,7 +14,7 @@ function Navbar() {
             <nav>
                 <div className="navbar-container">
                     <div className="navbar-container-left">
-                        <h1 className="navbar-container-left-title">Personal Library
+                        <h1 className="navbar-container-left-title">Library
                         <img className="navbar-container-left-img" src={bookImg}/>
                         </h1>
                     </div>
