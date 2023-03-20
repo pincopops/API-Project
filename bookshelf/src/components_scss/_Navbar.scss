@@ -1,0 +1,54 @@
+.navbar-container {
+    background-color: $secondary-alt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;;
+    border-bottom: 0.3rem solid $black-gray;
+
+    &-left {
+
+        &-title {
+            margin: unset;
+        }
+
+        &-img {
+            margin-left: 1rem;
+        }
+
+    }
+
+    &-right {
+        width: 40rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            height: 80%;
+            margin: unset;
+            border-bottom: 0.3rem solid white;
+            cursor: pointer;
+        }
+
+        #navbar-container-right-focus{
+            border-bottom: 0.3rem solid $primary;
+            background-color: $light-grey;
+        }
+
+
+
+
+
+    }
+
+    &-focus {
+        border-bottom: 0.3rem solid $primary;
+        color: $black-gray !important;
+    }
+}

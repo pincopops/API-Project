@@ -3,6 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 import Header from "./Header";
 import Card from "./Card";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 
@@ -24,13 +26,16 @@ function Body() {
                 .then(res => setBookData(res.data.items))
                 .catch(err => { alert("Something went wrong. Try search better."); console.log(err); })
         }
+        // console.log(bookData);
     }
     return (
         <>
+            <Navbar />
             <Header value={search} onChange={(event) => setSearch(event.target.value)} onKeyDown={searchBook}/>
             <div className="card-container">
                 <Card book={bookData} />
             </div>
+            <Footer />
         </>
     )
 }
