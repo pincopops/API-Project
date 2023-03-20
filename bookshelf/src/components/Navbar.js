@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import bookImg from "../assets/svgs/book-icon-1.svg";
 
 function Navbar() {
-
-    const navbarItems = ["Home", "Books", "Shop"];
     
     const handleClickEvent = () => {
         alert(`ACCESS DENIED: \n you don't have superlative powers to access this section ⛔️`);

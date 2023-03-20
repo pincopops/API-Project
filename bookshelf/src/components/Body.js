@@ -26,7 +26,7 @@ function Body() {
                 .then(res => setBookData(res.data.items))
                 .catch(err => { alert("Something went wrong. Try search better."); console.log(err); })
         }
-        console.log(bookData);
+        // console.log(bookData);
     }
     return (
         <>
