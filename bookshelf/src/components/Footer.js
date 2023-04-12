@@ -1,5 +1,6 @@
 import React from "react";
 import bookImg from "../assets/svgs/book-icon-1.svg";
+import Weather from "./Weather";
 
 function Footer() {
     return (
@@ -14,6 +15,7 @@ function Footer() {
 
                 </div>
             </div>
+            <Weather />
         </>
     )
 }
